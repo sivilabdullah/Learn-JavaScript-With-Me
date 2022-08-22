@@ -1,1 +1,1 @@
-alert("merhaba amk");
+alert("merhaba");
