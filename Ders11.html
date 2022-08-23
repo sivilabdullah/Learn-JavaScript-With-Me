@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ado ile JS</title>
+</head>
+<body>
+    <script type="text/javascript" lang="javascript" >
+        //JavaScript dilinde sekiz farklı veri tipi bulunmaktadır.
+        //Number her türlü sayı için ( integer veya floating point)
+        let s = 123;
+
+        //String bir veya birden fazla karakter için
+        let isim = "Ahmet";
+
+        //bigint isteğe bağlı uzunluktaki tam sayılar içindir.Sondaki "n" bu değerin bir BigInt olduğu anlamına gelir
+        const bigInt = 1234567890123456789012345678901234567890n;
+
+        //Boolean doğru-yanlış değerleri için.
+        let isimKontrolu = true; // İsim kontrolü yapıldı.
+        let yasKontrolu = false; // Yaş kontrolü yapılmadı.
+
+        //Null bilinmeyen değerler için.
+        let yas = null;
+
+        //Undefined değer atanmamış değişkenler için.
+        let x;
+
+            alert(x); // "undefined" çıktısı verir.
+
+
+        /*Symbol objeler için benzersiz tanımlayıcılar oluşturmak 
+        için kullanılır. Bu konuyu objeleri öğrendikten sonra öğrenmek daha iyi olacaktır.
+        Object ozel bir tiptir. Diğer tüm tipler “primitive” yani basit veya ilkel tiplerdir. .
+        Bu değişkenler sadece bir şey tutabilirler( karakter dizisi veya sayı ).
+        Buna karşılık objeler veri koleksiyonları (collections) veya karmaşık yapılar tutabilirler.
+         Objeler konusunda Obje daha derinlemesine incelenecektir.
+        */
+            typeof undefined // "undefined"
+
+            typeof 0 // "number"
+
+            typeof true // "boolean"
+
+            typeof "foo" // "string"
+
+            typeof Symbol("id") // "symbol"
+
+            typeof Math // "object"  (1)
+
+            typeof null // "object"  (2)
+
+            typeof alert // "function"  (3)
+    </script>
+</body>
+</html>
