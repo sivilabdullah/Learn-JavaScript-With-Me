@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ado ile JS</title>
+</head>
+<body>
+    <script type="text/javascript" lang="javascript" >
+        //Degisken : Icerisinden her turde veriyi depolamak icin kullanilan alanlara verilen bilgi.
+        
+       //Degisken Turleri : 
+       //# var(standart degisken) tanimlamada kullanilir.
+       //var ile tanimlanan deger diger fonksiyon iclerinde cagrilabilir kullanilabilir (function scope) 
+       //fonskiyon konusunu ilerde ayrintili olarak gorecegiz
+       //hoisting (veri once kullanilip sonra degisken tanimi yapilmasi ozelligi) vardir
+        var a = "abdullah sivil";
+        document.write(a);
+
+      // # let(Blok kapsamli yerel degisken) tanimlada kullanilir. 
+      //sadece tanimlanan fonskiyonda kullanilabilir.
+      //veri tekrar tanimlanamaz fakat degeri guncellenebilir 
+      //hoisting ozelligi yoktur
+        let a = "abdullah sivil";
+        document.write(a);
+
+      //#const(sabit degisken ) tanimlada kullanilir.
+      //hoisting ozelligi yoktur
+      //veri tekrar tanimlanamaz degeri guncellenemez 
+      //hoisting ozelligi yoktur
+
+        const a = "abdullah sivil";
+        document.write(a);
+    </script>
+
+</body>
+</html>
