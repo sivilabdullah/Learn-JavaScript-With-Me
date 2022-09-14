@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ado ile JS</title>
+</head>
+<body>
+    <script>
+    //local ve global scope(kapsama alani) konusu
+    //Bir degikeni tanimlarken onun keyword'une(let, var vs) gore kapsama alani degisir.
+    //local alan, tanimladigimiz degeri sadece bulundugu fonksiyon icini temsil ederken Global alan tum fonksiyon alanlarini temsil eder
+    //let ve const degiskenleri ile tanimladigimiz degerler sadece local ozellili iken var global scope ozelliklidir
+    if(true){
+        var isim = 'abdullah';
+
+    }
+    document.write(isim);// local alanda tanimli olmasina ragmen var keywordu ekrana isimi yazdirir.
+    if (true) {
+            let isim = 'abdullah';
+
+        }
+        document.write(isim);
+        // ekrana bir sey yazmayacaktir nedeni tanimlama local alanada iken ekrana yazdirma islemi global alanda ve bu let keywordun ozelligidir.
+          if (true) {
+                const isim = 'abdullah';
+
+            }
+            document.write(isim);/*const'da da bir sey ekrana yazilmayacaktir. let'den farki, let ile 
+            deger atadigimiz degiskenin degerini guncelleyebilirken const'da durum tam tersidir verdigimiz deger kalici ve guncellenemez*/
+    </script>
+</body>
+</html>
