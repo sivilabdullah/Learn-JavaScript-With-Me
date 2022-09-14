@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ado ile JS</title>
+</head>
+<body>
+    <script>
+        //konumuz onceden degisken tanimlayip degerini sonra vermek.
+        //degerleri var ile tanimlayip alt satirda deger verebiliriz ve basina tekrar var keywordu yazmamiz gerekmez
+        //Not: var ve let keywordlerinde bu islemi yapabilirken const ile bu islemi yapamayiz cunku 
+        //deger girmedigimizde de aslinda undefined degeri atamis oluyoruz ve const bunu degistirmemize izin vermiyor.
+   var name ;
+   let lastname;
+   const lesson=' '; //ayrica derleyici const'da let ve var gibi tanimlayinca izin vermiyor ve hataya sebep oluyor 
+   name='abdullah';
+   lastname='sivil';
+   document.write(name +"<br />" +lastname+ "<br />"+lesson)
+    </script>
+</body>
+</html>
